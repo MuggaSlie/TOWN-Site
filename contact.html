@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+<link rel="stylesheet" href="https://use.typekit.net/yju5usv.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>TOWN foods</title>
+<meta name="description" content="TOWN is a chinese cuisine experiance designed to give you an authentic taste no matter where you are. " >
+<meta name="keywords" content="Chinese Cuisine, noodles, Chinese recepies, delivery, spicy, food, atmospheric">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8"/>
+</head>
+<body class="main">
+    <div class="sidenav">
+        <a href="index.html" class="logo"><img src="Images/Town_Logo_Transparent.png" alt="town" class="logo"></a>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="cater.html">Catering</a>
+        <a href="contact.html">Locations</a>
+    </div>
+    
+
+
+    <h1>Locations and contact information</h1>
+<!--The map requires API and Billing info to run correctly-->
+<div id="googleMap">
+    <script>
+    function myMap() {
+    var mapProp= {
+    center:new google.maps.LatLng(51.508742,-0.120850),
+    zoom:5,
+    };
+    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+    }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDhcghO31jbwvSbBlrEHrV5GfNjkbEY1w&callback=myMap">
+</script>
+</div>
+<!--This form doesn't work, but it is available to set up easily.-->
+<form>
+<div class="form_container">
+    <h2>Subscribe to our Newsletter</h2>
+    <p>Once a month we send out a newsletter detailing specials, menu changes, store openeings, and sharing discounts!</p>
+</div>
+    <div class="form_container" style="background-color: aliceblue">
+        <input type="text" placeholder="Name" name="name" required>
+        <input type="text" placeholder="Email Address" name="mail" required>
+    </div>
+    
+    <div class="form_container">
+        <input type="submit" value="Subscribe">
+    </div>
+</form>
+
+<div class="addy">
+    <h3>Our corperate office is located:</h3>
+    <p>
+        123 Hereorthere St<br>
+        Somewhere, CA, 90909<br>
+        (123)-456-7890<br>
+    </p>
+</div>
+    
+<div class="under_map">
+    <p>
+        Town foods store #12<br>
+        Elsewhere,OR, 12121<br>
+        (012)-345-6789<br>
+    </p>
+</div>
+    
+    
+
+    <div class="footer">
+        <p style="float:left; margin-left: 20%;">TOWN foods&#174;	2020 Call Us at (123)-456-7890 Our corporate office is available Mon-Fri 6am-8pm PST</p>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
+    </div>
+    </body>
+</html>
